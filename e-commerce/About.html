@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interest</title>
+    <link rel="stylesheet" href="About.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-size: cover;
+            background-image: url("Images/car2.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.3); /* Transparent white background */
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .blog {
+            margin-top: 80px; /* Adjust this value based on your needs */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .blog img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .blog-description {
+            margin-top: 15px;
+        }
+
+        .categorie {
+            color: #3498db;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="melus.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="store.html">Product</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Account</a>
+    </nav>
+
+    <div class="blog">
+        <img src="Images/car1.jpg" alt="">
+        <div class="blog-description">
+            <div class="categorie">Cars</div>
+            <h2 class="title">My Interest in cars</h2>
+            <div class="date">Dream Car</div>
+            <a href="#" class="btn">Read</a>
+        </div>
+    </div>
+</body>
+
+</html>

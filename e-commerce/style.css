@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(pxfuel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+
+}
+.logo{
+    width: 170px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+/* Add this to your existing CSS */
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+
+}
+
+
+.content h1{
+    font-size: 65px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0; /* Set a lower z-index value */
+    transition: width 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+    z-index: -1; /* Set a higher z-index value on hover */
+}
+
+button:hover {
+    border: none;
+}
+.categories{
+    margin: 20px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    float: left;
+}
+.col-3 img{
+    width: 77%;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+    
+}
+.small-container{
+    max-width: 1700px;
+    margin: auto;
+    overflow: hidden;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.new-row{
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(pxfuel.jpg);
+    background-size: cover;
+    background-position: cover;
+    cursor: pointer;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10%;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    width: 320%;
+}
+h4{
+    color: #ffffff;
+    font-weight: normal;
+    margin-top: 10px;
+}
+.product-price{
+    color: #ffffff;
+}
+/* In your styles.css file */
+.shop-item-image {
+    width: 150px;
+    height: 150px;
+}
+
+.col-4{ 
+    font-size: 14px;
+}
+.rating {
+    display: flex; /* Align stars horizontally */
+    color: #ffd700; /* Set star color to gold/yellow */
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+.rating i {
+    margin-right: 5px; /* Add spacing between stars */
+}
+.product-price {
+    white-space: nowrap;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #000000;
+}
+.title::after{
+    content: '';
+    background: #009688;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*------testimonial------*/
+.testimonial{
+    padding-top: 100px;
+
+}
+.testimonial .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}    
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform(0.5s);
+}
+.testimonial .col-3 img{
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-15px);
+}
+.fa-quote-left{
+    font-size: 45px;
+    color: #ffd700;
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+
+}
+/*-----brands-----*/
+.brands {
+    margin: 100px auto;
+}
+
+.brands .col-5 {
+    display: inline-block;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.brands .col-5 img {
+    width: 85%;
+    cursor: pointer;
+    filter: grayscale(100);
+    display: flex;
+}
+.brands .col-5 img:hover{
+    filter: grayscale(0);
+}
+/*-------footer-------*/
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 30px 0 20px;
+}
+
+.footer .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer .column {
+    width: 10%; /* Adjust the width as needed */
+    height: 200px;
+}
+
+.footer img.logo {
+    width: 5px; /* Adjust the size as needed */
+    margin-bottom: 10px; /* Add margin for spacing */
+    
+}
+
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 10px;
+}
+.app-logo img{
+    width: 120px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 15px 0;
+}
+.copyright{
+    text-align: center;
+}
+.shopping-cart {
+    cursor: pointer; /* Optional: Add a pointer cursor on hover */
+}
+.menu-icon{
+    width: 30px;
+    margin-left: 10px;
+    display: none;
+}
+
+
+/*---------All products page--------*/
+
+/* Adjust the margin and display properties to achieve the desired spacing */
+.row-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-heading {
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.sorting-dropdown {
+    width: 150px; /* Adjust the width as needed */
+}
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+
+
+
+
+/*-----media query for menu----*/
+@media only screen and (max-width: 800px) {
+    .navbar ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0; /* Adjust margin as needed */
+    }
+
+    .navbar ul li a {
+        color: #fff;
+        display: block;
+        padding: 10px; /* Adjust padding as needed */
+        text-decoration: none;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+
+
